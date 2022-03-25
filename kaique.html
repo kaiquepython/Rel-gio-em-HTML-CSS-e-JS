@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="kaique.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <body background="https://i.pinimg.com/736x/87/d2/23/87d2238afcf856c4ea08b6d0a02330fd.jpg">
+
+    <div>
+        <h1>Relógio Digital</h1>
+        <h3 id="id"></h3>
+        <h3 id="id2"></h3>
+        <h3 id="id3"></h3>
+        <h3 id="id4"></h3>
+    </div>
+    <script>
+
+    var data = new Date();
+    var Dia = data.getDate();
+    var Hora = data.getHours();
+    var Minutos = data.getMinutes();
+    var Segundos = data.getSeconds();
+
+    const valor1 = document.querySelector("#id");
+    valor1.innerText = `Dia ${Dia}`;
+
+    const valor2 = document.querySelector("#id2");
+    valor2.innerText = `${Hora} Hora(s)`;
+
+    const valor3 = document.querySelector("#id3");
+    valor3.innerText = `${Minutos} Minuto(s)`;
+
+    const valor4 = document.querySelector("#id4");
+    valor4.innerText = `${Segundos} Segundo(s)`;
+    
+    </script>
+
+</body>
+</html>
